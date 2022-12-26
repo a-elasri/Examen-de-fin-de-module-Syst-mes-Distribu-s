@@ -11,12 +11,11 @@ public class UpdateProductCommand extends  BaseCommand<String>{
    @Getter private ProductEtat etat ;
     @Getter private String categorie ;
 
-    public UpdateProductCommand(String id, String nom, double prix, int qteStock, ProductEtat etat,String categorie) {
+    public UpdateProductCommand(String id, String nom, double prix, int qteStock, ProductEtat etat) {
         super(id);
         this.nom = nom;
         this.prix = prix;
         this.qte = qteStock;
         this.etat = etat;
-        this.categorie =categorie ;
     }
 }

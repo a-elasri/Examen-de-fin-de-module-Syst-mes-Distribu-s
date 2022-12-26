@@ -11,13 +11,12 @@ public class ProductUpdatedEvent extends BaseEvent<String>{
     @Getter private  int qte  ;
     @Getter private ProductEtat etat ;
     @Getter private String categorie ;
-    public ProductUpdatedEvent(String id, String nom, double prix, int qte, ProductEtat etat, String categorie) {
+    public ProductUpdatedEvent(String id, String nom, double prix, int qte, ProductEtat etat) {
         super(id);
         this.nom = nom;
         this.prix = prix;
         this.qte = qte;
         this.etat = etat;
-        this.categorie =categorie ;
     }
 }
 

@@ -32,9 +32,9 @@ public class PoductAggregate {
                         command.getId(),
                         command.getNom(),
                         command.getPrix(),
-                        command.getQteStock(),
+                        command.getQte(),
                         command.getEtat()
-                )
+                        )
         );
     }
 
@@ -43,8 +43,9 @@ public class PoductAggregate {
         this.id = event.getId();
         this.nom = event.getNom();
         this.prix = event.getPrix();
-        this.qteStock = event.getQteStock();
         this.etat = event.getEtat();
+        this.qteStock = event.getQte();
+
     }
 
     @CommandHandler
@@ -54,7 +55,7 @@ public class PoductAggregate {
                         command.getId(),
                         command.getNom(),
                         command.getPrix(),
-                        command.getQteStock(),
+                        command.getQte(),
                         command.getEtat()
                 )
         );
@@ -65,7 +66,7 @@ public class PoductAggregate {
         this.id = event.getId();
         this.nom = event.getNom();
         this.prix = event.getPrix();
-        this.qteStock = event.getQteStock();
+        this.qteStock = event.getQte();
         this.etat = event.getEtat();
     }
 

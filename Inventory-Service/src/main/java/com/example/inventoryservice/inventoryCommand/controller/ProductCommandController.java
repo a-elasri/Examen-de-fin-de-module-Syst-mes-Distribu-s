@@ -30,7 +30,7 @@ public class ProductCommandController {
                 UUID.randomUUID().toString(),
                 request.getNom(),
                 request.getPrix(),
-                request.getQteStock(),
+                request.getQte(),
                 request.getEtat()
         ));
     }
@@ -41,7 +41,7 @@ public class ProductCommandController {
                 request.getId(),
                 request.getNom(),
                 request.getPrix(),
-                request.getQteStock(),
+                request.getQte(),
                 request.getEtat()
         ));
     }
